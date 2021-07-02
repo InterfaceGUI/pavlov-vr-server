@@ -7,8 +7,9 @@ services:
     - ./Game.ini:/home/steam/pavlovserver/Pavlov/Saved/Config/LinuxServer/Game.ini
     - ./RconSettings.txt:/home/steam/pavlovserver/Pavlov/Saved/Config/RconSettings.txt
     environment:
-    - PORT=7500
+    - PORT=7777
     ports:
-    - 7500:7500/udp
-    - 7901:7901/udp
-    - 15200:15200/tcp
+    - 7777:7777/udp
+    - 8177:8177/udp
+    - 7777:7777/tcp
+    - 8177:8177/tcp
