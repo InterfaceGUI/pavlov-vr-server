@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PORT="${PORT:-7500}"
+PORT="${PORT:-7777}"
 
 _update() {
 	echo "Updating Pavlov VR";
