@@ -4,7 +4,7 @@ PORT="${PORT:-7500}"
 
 _update() {
 	echo "Updating Pavlov VR";
-        cd ~/Steam && ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 +exit
+        cd ~/Steam && ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 -beta docker +exit
 }
 
 _run() {
