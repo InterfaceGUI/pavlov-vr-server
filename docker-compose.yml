@@ -2,7 +2,7 @@ version: '2.3'
 
 services:
   pavlov:
-    image: ihadeed/pavlov-server:latest
+    image: InterfaceGUI/pavlov-server:latest
     volumes:
     - ./Game.ini:/home/steam/pavlovserver/Pavlov/Saved/Config/LinuxServer/Game.ini
     - ./RconSettings.txt:/home/steam/pavlovserver/Pavlov/Saved/Config/RconSettings.txt
@@ -13,3 +13,4 @@ services:
     - 8177:8177/udp
     - 7777:7777/tcp
     - 8177:8177/tcp
+    - 8177:9100/tcp
